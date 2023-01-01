@@ -2,7 +2,8 @@
   "name": "pvsc-pm",
   "displayName": "pvsc-pm",
   "description": "Productivity enhancements for me",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "publisher": "padcom",
   "repository": "github:padcom/pvsc-pm",
   "engines": {
     "vscode": "^1.74.0"
@@ -30,11 +31,13 @@
     "keybindings": [
       {
         "command": "pvsc-pm.scrollUp",
-        "key": "ctrl+up"
+        "key": "ctrl+up",
+        "when": "editorTextFocus"
       },
       {
         "command": "pvsc-pm.scrollDown",
-        "key": "ctrl+down"
+        "key": "ctrl+down",
+        "when": "editorTextFocus"
       }
     ]
   },
