@@ -2,7 +2,7 @@
   "name": "pvsc-pm",
   "displayName": "pvsc-pm",
   "description": "Productivity enhancements for me",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "padcom",
   "repository": "github:padcom/pvsc-pm",
   "engines": {
@@ -44,7 +44,8 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "node ./test/runTest.js"
+    "test": "node ./test/runTest.js",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/glob": "^8.0.0",
