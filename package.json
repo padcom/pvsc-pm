@@ -1,0 +1,58 @@
+{
+  "name": "pvsc-pm",
+  "displayName": "pvsc-pm",
+  "description": "Productivity enhancements for me",
+  "version": "0.0.1",
+  "repository": "github:padcom/pvsc-pm",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:pvsc-pm.helloWorld"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pvsc-pm.scrollUp",
+        "category": "Editor",
+        "title": "Scroll Up (Line)"
+      },
+      {
+        "command": "pvsc-pm.scrollDown",
+        "category": "Editor",
+        "title": "Scroll Down (Line)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "pvsc-pm.scrollUp",
+        "key": "ctrl+up"
+      },
+      {
+        "command": "pvsc-pm.scrollDown",
+        "key": "ctrl+down"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "@vscode/test-electron": "^2.2.0",
+    "@vscode/vsce": "^2.16.0",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3"
+  }
+}
